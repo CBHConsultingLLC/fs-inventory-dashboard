@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pharmacy Floorstock Tracker</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/css/bootstrap-datepicker.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />	
+	<link rel="stylesheet" href="https://unpkg.com/tabulator-tables@6.3.1/dist/css/tabulator.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabulator/6.3.0/css/tabulator_bootstrap5.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.fancytree/2.38.4/skin-awesome/ui.fancytree.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />		
+	<link rel="stylesheet" href="assets/pharm_fs_main_report_driver.css" />
+	
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/js/bootstrap-datepicker.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script type="text/javascript" src="https://unpkg.com/tabulator-tables@6.3.1/dist/js/tabulator.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/luxon/3.5.0/luxon.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.4.0/exceljs.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://kit.fontawesome.com/d98fc94c11.js" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.fancytree/2.38.5/jquery.fancytree-all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery.fancytree@2.23.0/src/jquery.fancytree.filter.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery.fancytree@2.23.0/src/jquery.fancytree.glyph.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="assets/pharm_fs_main_report_driver.js"></script>
+</head>
+
+<body onload="initialLoad()">
+    <div class="dashboard-container">
+        <header class="header-bar text-center">
+            <div style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          ">
+                <div>
+                    <div style="font-size: 30px; font-weight: bold">
+                        Pharmacy Floorstock Tracker
+                    </div>
+                </div>
+                <div>
+                    <i id="loadFormularyManagerBtn" class="fa-solid fa-database fa-xl" title="Formulary Tool"
+                        style="color: white; cursor: pointer" aria-hidden="true"></i><span class="sr-only">Formulary
+                        Tool</span>
+                </div>
+            </div>
+        </header>
+        <div style="
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        ">
+            <div style="margin-left: 1em">
+                <i id="inventoryFilterOptionsBtn" class="fa-solid fa-bars fa-2xl" title="Filter Options"
+                    style="cursor: pointer" aria-hidden="true"></i><span class="sr-only">Filter Options</span><i
+                    id="changesFilterOptionsBtn" class="fa-solid fa-bars fa-2xl" title="Filter Options"
+                    style="cursor: pointer; display: none" aria-hidden="true"></i><span class="sr-only">Filter
+                    Options</span>
+            </div>
+            <div>
+                <ul class="nav nav-pills justify-content-center py-2">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" id="reportsBtn">Location</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="dashboardBtn">Changes</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <i id="downloadCurrentTableBtn" class="fa-solid fa-download fa-2xl" title="Download"
+                    style="cursor: pointer; display: none" aria-hidden="true"></i><span class="sr-only">Download</span>
+            </div>
+        </div>
+        <hr />
+        <div class="dashboard-main">
+            <div style="flex: 1">
+                <div id="reportsDiv" style="display: block; height: -webkit-fill-available">
+                    <div class="d-flex" style="height: 100%; width: 100%">
+                        <div id="locationFilterDiv" class="card p-3 shadow-sm"
+                            style="width: 30vw; min-width: 30vw; margin-right: 1em">
+                            <h5 class="card-title mb-3">Location Filters</h5>
+                            <div class="mb-3">
+                                <div class="input-group dflex" role="group">
+                                    <label class="form-label" style="width: 3em">Type:</label><input type="radio"
+                                        class="btn-check" name="btnradio" id="btnradio5"
+                                        loctype="fa-solid fa-cabinet-filing" /><label class="btn btn-outline-primary"
+                                        for="btnradio5" title="Cabinet / Carousel"><i class="fa-solid fa-cabinet-filing"
+                                            aria-hidden="true"></i></label><input type="radio" class="btn-check"
+                                        name="btnradio" id="btnradio1" loctype="fa-solid fa-mortar-pestle" /><label
+                                        class="btn btn-outline-primary" for="btnradio1" title="Pharmacy"><i
+                                            class="fa-solid fa-mortar-pestle" aria-hidden="true"></i></label><input
+                                        type="radio" class="btn-check" name="btnradio" id="btnradio2"
+                                        loctype="fa-solid fa-user-nurse-hair-long" /><label
+                                        class="btn btn-outline-primary" for="btnradio2" title="Nurse Unit"><i
+                                            class="fa-solid fa-user-nurse-hair-long"
+                                            aria-hidden="true"></i></label><input type="radio" class="btn-check"
+                                        name="btnradio" id="btnradio3" loctype="fa-solid fa-house-medical-flag" /><label
+                                        class="btn btn-outline-primary" for="btnradio3" title="Ambulatory"><i
+                                            class="fa-solid fa-house-medical-flag" aria-hidden="true"></i></label><input
+                                        type="radio" class="btn-check" name="btnradio" id="btnradio4"
+                                        loctype="fa-solid fa-syringe" /><label class="btn btn-outline-primary"
+                                        for="btnradio4" title="Inventory"><i class="fa-solid fa-syringe"
+                                            aria-hidden="true"></i></label><input type="button" class="btn"
+                                        id="btnResetLocTypeSearch" style="border: none" disabled="" /><label
+                                        id="btnResetLocTypeSearchLabel" class="btn btn-outline-primary"
+                                        for="btnResetLocTypeSearch" title="Clear Filter" disabled="disabled"><i
+                                            class="fa-solid fa-circle-xmark" aria-hidden="true"></i></label>
+                                </div>
+                                <div style="padding: 10px"></div>
+                                <div id="locationCabinetTree">
+                                    <ul style="display: none" class="ui-fancytree-source ui-helper-hidden">
+                                        <li data-icon="fa-solid fa-hospitals">
+                                            Advanced Cardiology Practice Berkshire
+                                            <ul>
+                                                <li id="2609228293.000000" data-icon="fa-solid fa-syringe">
+                                                    Advanced Cardiology Berkshire (Private)
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li data-icon="fa-solid fa-hospitals">
+                                            Advanced Cardiology Practice Clifton 246
+                                            <ul>
+                                                <li id="2609230529.000000" data-icon="fa-solid fa-syringe">
+                                                    Advanced Cardiology Clifton 246 Private
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li data-icon="fa-solid fa-hospitals">
+                                            Pediatric Hematology Oncology Getty
+                                            <ul>
+                                                <li id="2555693677.000000" data-icon="fa-solid fa-syringe">
+                                                    Peds Hematology Oncology Getty(Priv)
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li data-icon="fa-solid fa-hospitals">
+                                            Pediatric Hematology Oncology Paterson
+                                            <ul>
+                                                <li id="2555693653.000000" data-icon="fa-solid fa-syringe">
+                                                    Peds Hematology Oncology Pat (Private)
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li data-icon="fa-solid fa-hospitals">
+                                            St. Joseph's University Medical Center
+                                            <ul>
+                                                <li id="2554275287.000000" data-icon="fa-solid fa-user-nurse-hair-long">
+                                                    CCB 3N
+                                                </li>
+                                                <li id="2554275551.000000" data-icon="fa-solid fa-user-nurse-hair-long">
+                                                    CCB 3S
+                                                </li>
+                                                <li id="6065135823.000000" data-icon="fa-solid fa-cabinet-filing">
+                                                    PBC SJX3IV
+                                                </li>
+                                                <li id="2554376983.000000" data-icon="fa-solid fa-mortar-pestle">
+                                                    Pharmacy Main SJRH
+                                                </li>
+                                                <li id="2555556309.000000" data-icon="fa-solid fa-cabinet-filing">
+                                                    UBC SJASENDO02
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li data-icon="fa-solid fa-hospitals">
+                                            University Imaging St. Joseph's Wayne Hospital
+                                            <ul>
+                                                <li id="2554440165.000000" data-icon="fa-solid fa-house-medical-flag">
+                                                    Univ Imaging
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div style="padding: 10px"></div>
+                                <div class="mb-3">
+                                    <div class="input-group dflex" role="group">
+                                        <button class="btn btn-primary" id="submitInventoryBtn" disabled="">
+                                            Submit
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tableDetailDiv" style="display: none; width: 100%">
+                            <div style="width: 100%">
+                                <span><b><u>Location</u></b>: </span><span id="inventoryHeaderTitleLocation"
+                                    location=""></span>
+                            </div>
+                            <div id="mainTable" class="table-sm" style="display: block; width: 100%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="dashboardDiv" style="display: none; width: 100%">
+                    <div class="d-flex" style="height: 100%; width: 100%">
+                        <div id="changeReportFilterDiv" class="card shadow-sm p-4"
+                            style="width: 30vw; min-width: 30vw; margin-right: 1em">
+                            <div class="card-body">
+                                <h5 class="card-title mb-4">Change Filters</h5>
+                                <div class="mb-3">
+                                    <label for="changesFilterStartDate" class="form-label">Start Date</label><input
+                                        type="text" id="changesFilterStartDate" class="form-control" />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="changesFilterStopDate" class="form-label">Stop Date</label><input
+                                        type="text" id="changesFilterStopDate" class="form-control" />
+                                </div>
+                                <div class="d-grid mt-4">
+                                    <button type="button" id="submitFilterButton" class="btn btn-primary">
+                                        Submit
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="width: 100%">
+                            <span id="changeHeaderTitleLocation" sdate="" edate=""></span>
+                            <div id="dashboardTableDiv" class="table-sm" style="display: block; width: 100%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="settingsDiv" style="display: none">
+                    <div style="height: 100%; width: 100%">
+                        <h5>Settings</h5>
+                        <p>
+                            Configure user preferences, report defaults, and other
+                            system-level options here.
+                        </p>
+                    </div>
+                </div>
+                <div id="adminDiv" style="display: none">
+                    <div style="height: 100%; width: 100%">
+                        <h5>Admin Tools</h5>
+                        <p>
+                            Access administrative controls, manage user roles, and oversee
+                            system configuration.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="header-bar text-center py-2"></footer>
+    </div>
+</body>
+
+</html>
