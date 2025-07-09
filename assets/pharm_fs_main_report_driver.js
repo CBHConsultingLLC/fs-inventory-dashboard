@@ -3,6 +3,10 @@ window.onload = function() {
     window.location.href = window.location.href.split("?")[0] + "?cachebust=" + new Date().getTime();
   }
 };
+
+$(document).ready(function() {
+  initialLoad();
+});
 function initialLoad(){
   $('#reportsBtn').on('click',function(){
     showSection('reportsDiv');
