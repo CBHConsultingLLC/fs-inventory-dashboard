@@ -300,6 +300,44 @@ function submitInventoryRequest(){
     selectedLocationVal = parseFloat(selectedLocationStr);
 
     if(!isNaN(selectedLocationVal)){
+      let fetchURL = "";
+      if(selectedLocationVal === 2609228293.0){
+        fetchURL = "https://ehrtechsolutions.com/fs-inventory-dashboard/data/clinic_inventory_1.json";
+      } else if(selectedLocationVal === 2609230529.0){
+        fetchURL = "https://ehrtechsolutions.com/fs-inventory-dashboard/data/clinic_inventory_2.json";
+      } else if(selectedLocationVal === 2554275287.0){
+        fetchURL = "https://ehrtechsolutions.com/fs-inventory-dashboard/data/nurse_inventory_1.json";
+      } else if(selectedLocationVal === 2554275551.0){
+        fetchURL = "https://ehrtechsolutions.com/fs-inventory-dashboard/data/nurse_inventory_2.json";
+      } else if(selectedLocationVal === 6065135823.0){
+        fetchURL = "https://ehrtechsolutions.com/fs-inventory-dashboard/data/carousel_inventory_1.json";
+      } else if(selectedLocationVal === 2554376983.0){
+        fetchURL = "https://ehrtechsolutions.com/fs-inventory-dashboard/data/pharmacy_inventory_1.json";
+      } else if(selectedLocationVal === 2555556309.0){
+        fetchURL = "https://ehrtechsolutions.com/fs-inventory-dashboard/data/cabinet_inventory_1.json";
+      } else if(selectedLocationVal === 2554440165.0){    
+        fetchURL = "https://ehrtechsolutions.com/fs-inventory-dashboard/data/ambulatory_inventory_1.json";
+      }
+
+      fetch(fetchURL)
+      .then(response => {
+        console.log("Fetch response:", response);
+        return response.json();
+      })
+      .then(data => {
+        console.log("Parsed data:", data);
+
+        $("#reportFrame").attr("src","").hide();
+        $("#locationFilterDiv").hide();
+       $("#inventoryHeaderTitleLocation").text([]).text(data.IREC.LOCATION_VC).attr("location","").attr("location",data.IREC.LOCATION_VC);
+        $("#tableDetailDiv,#downloadCurrentTableBtn,#refreshChangesTblBtn").show();
+        initiateDetailTabulator02(data.IREC.QUAL);
+      })
+      .catch(error => {
+        console.error("Fetch error:", error);
+      });
+
+      /*
       const reportName = "1_STJO_PHA_FS_ANALYSIS_RPT";
       const reportParam = '^MINE^,' + 2 + ',' + selectedLocationVal + ".0";
 
@@ -322,7 +360,7 @@ function submitInventoryRequest(){
       }
       initsync.open("GET",reportName,1);
       initsync.send(reportParam);
-
+      */
     } else {
       console.log("Level 1 Location Selected");
     };
@@ -407,7 +445,7 @@ function initiateDetailTabulator02(data){
   if(typeof(refTable) != "undefined"){
     refTable.destroy();
   };
-
+  console.log(data);
   refTable = new Tabulator("#mainTable",{
     data:data,
     placeholder:"No Data Found!",

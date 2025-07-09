@@ -1,0 +1,57 @@
+{
+  "IREC": {
+    "CNT": 6,
+    "LOCATION_F8": 2554275055.0,
+    "LOCATION_VC": "CCB 2S",
+    "QUAL": [
+      {
+        "ITEM_ID": 77337479.0,
+        "ITEM_DESC": "Dextrose 5% in Water IV Soln 1000 mL",
+        "ITEM_SDESC": "D5Water1000mL",
+        "ITEM_OMNI_ID": "1948",
+        "UPDT_DT_TM": "08/03/2018 20:13",
+        "UPDT_PRSNL": "Siela, Casey"
+      },
+      {
+        "ITEM_ID": 77337534.0,
+        "ITEM_DESC": "Dextrose 5% in Water IV Soln 500 mL",
+        "ITEM_SDESC": "D5Water500mL",
+        "ITEM_OMNI_ID": "4818",
+        "UPDT_DT_TM": "08/03/2018 20:15",
+        "UPDT_PRSNL": "Siela, Casey"
+      },
+      {
+        "ITEM_ID": 77340307.0,
+        "ITEM_DESC": "Lactated Ringers IV Soln 1000 mL",
+        "ITEM_SDESC": "LR1000mL",
+        "ITEM_OMNI_ID": "2000",
+        "UPDT_DT_TM": "08/03/2018 20:16",
+        "UPDT_PRSNL": "Siela, Casey"
+      },
+      {
+        "ITEM_ID": 77340252.0,
+        "ITEM_DESC": "Lactated Ringers IV Soln 500 mL",
+        "ITEM_SDESC": "LR500mL",
+        "ITEM_OMNI_ID": "1999",
+        "UPDT_DT_TM": "08/03/2018 20:18",
+        "UPDT_PRSNL": "Siela, Casey"
+      },
+      {
+        "ITEM_ID": 77339981.0,
+        "ITEM_DESC": "sodium chloride 0.9% IV Soln 1000 mL",
+        "ITEM_SDESC": "NaCl91000mL",
+        "ITEM_OMNI_ID": "1968",
+        "UPDT_DT_TM": "08/03/2018 19:51",
+        "UPDT_PRSNL": "Siela, Casey"
+      },
+      {
+        "ITEM_ID": 77339926.0,
+        "ITEM_DESC": "sodium chloride 0.9% IV Soln 500 mL",
+        "ITEM_SDESC": "NaCl9500mL",
+        "ITEM_OMNI_ID": "4936",
+        "UPDT_DT_TM": "08/03/2018 20:10",
+        "UPDT_PRSNL": "Siela, Casey"
+      }
+    ]
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "IREC": {
+    "CNT": 16,
+    "LOCATION_F8": 4289779185.0,
+    "LOCATION_VC": "Clinic #2 Private",
+    "QUAL": [
+      {
+        "ITEM_ID": 77343906.0,
+        "ITEM_DESC": "acetaminophen 325 mg Tab",
+        "ITEM_SDESC": "acet325Tab",
+        "ITEM_OMNI_ID": "3019",
+        "UPDT_DT_TM": "03/08/2023 10:04",
+        "UPDT_PRSNL": "Villanueva, Jessica"
+      },
+      {
+        "ITEM_ID": 77450277.0,
+        "ITEM_DESC": "cefTRIAXone 250 mg Inj",
+        "ITEM_SDESC": "ceftriax250Inj",
+        "ITEM_OMNI_ID": "154",
+        "UPDT_DT_TM": "02/02/2023 13:56",
+        "UPDT_PRSNL": "Villanueva, Jessica"
+      },
+      {
+        "ITEM_ID": 77450332.0,
+        "ITEM_DESC": "cefTRIAXone 500 mg Inj",
+        "ITEM_SDESC": "ceftriax500Inj",
+        "ITEM_OMNI_ID": "155",
+        "UPDT_DT_TM": "01/06/2023 09:27",
+        "UPDT_PRSNL": "Perez, Jennifer"
+      },
+      {
+        "ITEM_ID": 77498364.0,
+        "ITEM_DESC": "dexamethasone 10 mg/mL Inj Soln 1 mL",
+        "ITEM_SDESC": "dexameth10Soln1",
+        "ITEM_OMNI_ID": "2301",
+        "UPDT_DT_TM": "01/06/2023 13:40",
+        "UPDT_PRSNL": "Pitts, Sekani S"
+      },
+      {
+        "ITEM_ID": 77518369.0,
+        "ITEM_DESC": "diphenhydrAMINE 50 mg/mL Inj Soln 1 mL",
+        "ITEM_SDESC": "diphen50Soln1",
+        "ITEM_OMNI_ID": "2303",
+        "UPDT_DT_TM": "02/02/2023 13:35",
+        "UPDT_PRSNL": "Villanueva, Jessica"
+      },
+      {
+        "ITEM_ID": 77627381.0,
+        "ITEM_DESC": "ibuprofen 200 mg Tab",
+        "ITEM_SDESC": "ibup200Tab",
+        "ITEM_OMNI_ID": "2663",
+        "UPDT_DT_TM": "06/30/2023 11:25",
+        "UPDT_PRSNL": "Villanueva, Jessica"
+      },
+      {
+        "ITEM_ID": 77632698.0,
+        "ITEM_DESC": "influenza virus vaccine, inactivated high-dose preservative-free trivalent IM Susp 0.5 mL",
+        "ITEM_SDESC": "influenzavirusvaccineinactivatedhighdosePFtrivalentSusp5",
+        "ITEM_OMNI_ID": "5974",
+        "UPDT_DT_TM": "10/03/2024 10:38",
+        "UPDT_PRSNL": "Buyukkarakaya, RN, Serife"
+      },
+      {
+        "ITEM_ID": 85191522.0,
+        "ITEM_DESC": "influenza virus vaccine, inactivated preservative-free trivalent IM Susp 0.5 mL (Flulaval)",
+        "ITEM_SDESC": "influenzainactivatedFlulaval24-25",
+        "ITEM_OMNI_ID": "5975",
+        "UPDT_DT_TM": "11/11/2024 09:07",
+        "UPDT_PRSNL": "Buyukkarakaya, RN, Serife"
+      },
+      {
+        "ITEM_ID": 77649650.0,
+        "ITEM_DESC": "ketorolac 30 mg/mL Inj Soln 1 mL",
+        "ITEM_SDESC": "ketor30Soln1",
+        "ITEM_OMNI_ID": "175",
+        "UPDT_DT_TM": "01/06/2023 13:18",
+        "UPDT_PRSNL": "Pitts, Sekani S"
+      },
+      {
+        "ITEM_ID": 77664395.0,
+        "ITEM_DESC": "lidocaine 2% Inj Soln 20 mL",
+        "ITEM_SDESC": "lido2Soln20",
+        "ITEM_OMNI_ID": "1167",
+        "UPDT_DT_TM": "06/30/2023 13:26",
+        "UPDT_PRSNL": "Villanueva, Jessica"
+      },
+      {
+        "ITEM_ID": 83882103.0,
+        "ITEM_DESC": "pneumococcal 20-valent conjugate vaccine IM Susp 0.5 mL",
+        "ITEM_SDESC": "pneumococcal20valentconjugatevaccineSusp5",
+        "ITEM_OMNI_ID": "5867",
+        "UPDT_DT_TM": "07/13/2023 13:13",
+        "UPDT_PRSNL": "Buyukkarakaya, RN, Serife"
+      },
+      {
+        "ITEM_ID": 77841260.0,
+        "ITEM_DESC": "tetanus-diphtheria toxoids (Td) adult/adolescent 5 units-2 units/0.5 mL IM Susp 0.5 mL",
+        "ITEM_SDESC": "tetanusdiphtheriatoxoids(Td)adultadolescent525Susp5",
+        "ITEM_OMNI_ID": "5110",
+        "UPDT_DT_TM": "02/02/2023 14:07",
+        "UPDT_PRSNL": "Villanueva, Jessica"
+      },
+      {
+        "ITEM_ID": 77841095.0,
+        "ITEM_DESC": "tetanus/diphth/pertussis (Boostrix Tdap) IM Susp 0.5 mL",
+        "ITEM_SDESC": "Boostrix",
+        "ITEM_OMNI_ID": "4154",
+        "UPDT_DT_TM": "01/06/2023 09:19",
+        "UPDT_PRSNL": "Perez, Jennifer"
+      },
+      {
+        "ITEM_ID": 78294594.0,
+        "ITEM_DESC": "tetracaine 0.5% Ophth Soln 4 mL",
+        "ITEM_SDESC": "tetracaine5Soln4",
+        "ITEM_OMNI_ID": "5549",
+        "UPDT_DT_TM": "06/30/2023 11:28",
+        "UPDT_PRSNL": "Villanueva, Jessica"
+      },
+      {
+        "ITEM_ID": 77862470.0,
+        "ITEM_DESC": "tuberculin PPD 5 tuberculin units/0.1 mL ID Soln 1 mL",
+        "ITEM_SDESC": "tuberculinPPD1mL",
+        "ITEM_OMNI_ID": "2967",
+        "UPDT_DT_TM": "01/06/2023 09:17",
+        "UPDT_PRSNL": "Perez, Jennifer"
+      },
+      {
+        "ITEM_ID": 81738125.0,
+        "ITEM_DESC": "zzinfluenza vaccine for 6+ months (Fluarix), inactivated, quadrivalent (IIV4) (PF) 0.5 mL Susp",
+        "ITEM_SDESC": "zzinfFLUARIX0.5mL",
+        "ITEM_OMNI_ID": "5583",
+        "UPDT_DT_TM": "01/06/2023 09:08",
+        "UPDT_PRSNL": "Perez, Jennifer"
+      }
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "IREC": {
+    "CNT": 2,
+    "LOCATION_F8": 2554440995.0,
+    "LOCATION_VC": "CM Peds PrmCare",
+    "QUAL": [
+      {
+        "ITEM_ID": 77605660.0,
+        "ITEM_DESC": "hepatitis A pediatric vaccine 720 units/0.5 mL PF IM Susp 0.5 mL",
+        "ITEM_SDESC": "hepatitisApediatricvaccine7205PFSusp5",
+        "ITEM_OMNI_ID": "2790",
+        "UPDT_DT_TM": "12/05/2018 13:37",
+        "UPDT_PRSNL": "Siela, Casey"
+      },
+      {
+        "ITEM_ID": 81773733.0,
+        "ITEM_DESC": "rotavirus vaccine monovalent Oral Powder-Recon 10 mL",
+        "ITEM_SDESC": "rotamonovalentPow",
+        "ITEM_OMNI_ID": "",
+        "UPDT_DT_TM": "12/10/2018 17:45",
+        "UPDT_PRSNL": "Siela, Casey"
+      }
+    ]
+  }
+}
