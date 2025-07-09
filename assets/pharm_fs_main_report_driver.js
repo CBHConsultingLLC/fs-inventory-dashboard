@@ -287,7 +287,7 @@ function refreshChanges(){
     $('#changeHeaderTitleLocation').attr('sDate',"").attr('eDate',"");
     $('#changeHeaderTitleLocation').attr('sDate',startDateFDisp).attr('eDate',stopDateFDisp);
     $("#dashboardDiv,#downloadCurrentTableBtn,#refreshChangesTblBtn").show();
-    initiateDetailTabulator02(data.IREC.QUAL);
+    initiateDetailTabulator01(data.MREC.QUAL);
   })
   .catch(error => {
     console.error("Fetch error:", error);
@@ -333,7 +333,7 @@ function submitInventoryRequest(){
 
         $("#reportFrame").attr("src","").hide();
         $("#locationFilterDiv").hide();
-       $("#inventoryHeaderTitleLocation").text([]).text(data.IREC.LOCATION_VC).attr("location","").attr("location",data.IREC.LOCATION_VC);
+        $("#inventoryHeaderTitleLocation").text([]).text(data.IREC.LOCATION_VC).attr("location","").attr("location",data.IREC.LOCATION_VC);
         $("#tableDetailDiv,#downloadCurrentTableBtn,#refreshChangesTblBtn").show();
         initiateDetailTabulator02(data.IREC.QUAL);
       })
