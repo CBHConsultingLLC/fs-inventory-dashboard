@@ -337,30 +337,6 @@ function submitInventoryRequest(){
         console.error("Fetch error:", error);
       });
 
-      /*
-      const reportName = "1_STJO_PHA_FS_ANALYSIS_RPT";
-      const reportParam = '^MINE^,' + 2 + ',' + selectedLocationVal + ".0";
-
-      $("#reportFrame").attr("src","");
-
-      console.log(reportName + "|" + reportParam);
-
-      var initsync = new XMLCclRequest();
-      initsync.onreadystatechange = function() {
-        if(initsync.readyState == 4 && initsync.status == 200){
-          var initjson = JSON.parse(initsync.responseText);
-
-          $("#reportFrame").attr("src","").hide();
-          $("#locationFilterDiv").hide();
-          $("#inventoryHeaderTitleLocation").text([]).text(initjson.IREC.LOCATION_VC).attr("location","").attr("location",initjson.IREC.LOCATION_VC);
-          $("#tableDetailDiv,#downloadCurrentTableBtn,#refreshChangesTblBtn").show();
-
-          initiateDetailTabulator02(initjson.IREC.QUAL);
-        }
-      }
-      initsync.open("GET",reportName,1);
-      initsync.send(reportParam);
-      */
     } else {
       console.log("Level 1 Location Selected");
     };
