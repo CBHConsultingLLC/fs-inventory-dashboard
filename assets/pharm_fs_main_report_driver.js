@@ -286,7 +286,7 @@ function refreshChanges(){
     $('#changeHeaderTitleLocation').html([]).html("<b><u>Date Range</u></b>: " + startDateDisp + " to " + stopDateDisp);
     $('#changeHeaderTitleLocation').attr('sDate',"").attr('eDate',"");
     $('#changeHeaderTitleLocation').attr('sDate',startDateFDisp).attr('eDate',stopDateFDisp);
-    $("#dashboardDiv,#downloadCurrentTableBtn,#refreshChangesTblBtn").show();
+    $("#dashboardDiv,#downloadCurrentTableBtn,#refreshChangesTblBtn,#dashboardTableDiv").show();
     initiateDetailTabulator01(data.MREC.QUAL);
   })
   .catch(error => {

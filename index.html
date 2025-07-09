@@ -154,38 +154,37 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div style="padding: 10px"></div>
+                                <div class="location-filter-div-padding"></div>
                                 <div class="mb-3">
                                     <div class="input-group dflex" role="group">
-                                        <button class="btn btn-primary" id="submitInventoryBtn" disabled="">
+                                        <button type="button" class="btn btn-primary" id="submitInventoryBtn" disabled="">
                                             Submit
                                         </button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div id="tableDetailDiv" style="display: none; width: 100%">
-                            <div style="width: 100%">
+                        <div id="tableDetailDiv">
+                            <div>
                                 <span><b><u>Location</u></b>: </span><span id="inventoryHeaderTitleLocation"
                                     location=""></span>
                             </div>
-                            <div id="mainTable" class="table-sm" style="display: block; width: 100%"></div>
+                            <div id="mainTable" class="table-sm"></div>
                         </div>
                     </div>
                 </div>
-                <div id="dashboardDiv" style="display: none; width: 100%">
-                    <div class="d-flex" style="height: 100%; width: 100%">
-                        <div id="changeReportFilterDiv" class="card shadow-sm p-4"
-                            style="width: 30vw; min-width: 30vw; margin-right: 1em">
+                <div id="dashboardDiv">
+                    <div class="d-flex location-filter-div-container">
+                        <div id="changeReportFilterDiv" class="card shadow-sm p-4">
                             <div class="card-body">
                                 <h5 class="card-title mb-4">Change Filters</h5>
                                 <div class="mb-3">
-                                    <label for="changesFilterStartDate" class="form-label">Start Date</label><input
-                                        type="text" id="changesFilterStartDate" class="form-control" />
+                                    <label for="changesFilterStartDate" class="form-label">Start Date</label>
+                                    <input type="text" id="changesFilterStartDate" class="form-control" />
                                 </div>
                                 <div class="mb-3">
-                                    <label for="changesFilterStopDate" class="form-label">Stop Date</label><input
-                                        type="text" id="changesFilterStopDate" class="form-control" />
+                                    <label for="changesFilterStopDate" class="form-label">Stop Date</label>
+                                    <input type="text" id="changesFilterStopDate" class="form-control" />
                                 </div>
                                 <div class="d-grid mt-4">
                                     <button type="button" id="submitFilterButton" class="btn btn-primary">
@@ -194,14 +193,14 @@
                                 </div>
                             </div>
                         </div>
-                        <div style="width: 100%">
+                        <div class="change-report-div">
                             <span id="changeHeaderTitleLocation" sdate="" edate=""></span>
-                            <div id="dashboardTableDiv" class="table-sm" style="display: block; width: 100%"></div>
+                            <div id="dashboardTableDiv" class="table-sm"></div>
                         </div>
                     </div>
                 </div>
-                <div id="settingsDiv" style="display: none">
-                    <div style="height: 100%; width: 100%">
+                <div id="settingsDiv">
+                    <div class="miscTabDiv">
                         <h5>Settings</h5>
                         <p>
                             Configure user preferences, report defaults, and other
@@ -209,8 +208,8 @@
                         </p>
                     </div>
                 </div>
-                <div id="adminDiv" style="display: none">
-                    <div style="height: 100%; width: 100%">
+                <div id="adminDiv">
+                    <div class="miscTabDiv">
                         <h5>Admin Tools</h5>
                         <p>
                             Access administrative controls, manage user roles, and oversee

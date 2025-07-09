@@ -11,6 +11,26 @@ html {
   margin: 0.25em;
 }
 
+.miscTabDiv {
+  height: 100%;
+  width: 100%;
+}
+
+#dashboardDiv,#tableDetailDiv,#settingsDiv,#adminDiv {
+  display: none;
+  width: 100%;
+}
+
+#changeReportFilterDiv {
+  width: 30vw;
+  min-width: 30vw;
+  margin-right: 1em;
+}
+
+.change-report-div {
+  width: 100%;
+}
+
 .dashboard-main-content {
   flex: 1;
 }
