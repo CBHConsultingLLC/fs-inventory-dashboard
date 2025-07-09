@@ -8,12 +8,27 @@ html {
   display: flex;
   flex-direction: column;
   height: 100%;
+  margin: 0.25em;
 }
+
+.dashboard-main-content {
+  flex: 1;
+}
+
 .dashboard-main {
   flex: 1;
   display: flex;
   overflow: hidden;
 }
+
+.filter-input-title {
+  width: 3em;
+}
+
+.btn-borderNone {
+  border: none;
+}
+
 .dashboard-sidebar {
   width: 20%;
   min-width: 20%;
@@ -52,6 +67,28 @@ i:hover {
   color: white;
   padding: 10px;
 }
+
+.header-bar-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-bar-title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.formulary-tool-btn {
+  color: white;
+  cursor: pointer;
+}
+
+.filter-options-btn {
+  cursor: pointer;
+  display: none;
+}
+
 .btn-primary {
   background-color: #064b76;
   border-color: #064b76;
@@ -61,6 +98,15 @@ i:hover {
   border-color: #f5b218;
   color: #064b76;
 }
+
+.location-filter-div-padding {
+  padding: 10px;
+}
+
+#locationCabinetTreeList {
+  display: none;
+}
+
 .inputTitle {
   font-weight: bold;
   text-decoration: underline;
@@ -74,4 +120,20 @@ ul.fancytree-container {
   height: 50vh;
   overflow: auto;
   position: relative;
+}
+
+.location-filter-div-container {
+  height: 100%;
+  width: 100%;
+}
+
+.location-filter-div {
+  width: 30vw;
+  min-width: 30vw;
+  margin-right: 1em;
+}
+
+#reportsDiv {
+  display: block;
+  height: -webkit-fill-available;
 }

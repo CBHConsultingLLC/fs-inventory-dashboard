@@ -1,0 +1,353 @@
+{
+  "IREC": {
+    "CNT": 43,
+    "LOCATION_F8": 2609228293.0,
+    "LOCATION_VC": "Advanced Cardiology Berkshire (Private)",
+    "QUAL": [
+      {
+        "ITEM_ID": 77379406.0,
+        "ITEM_DESC": "antihemophilic factor VIII recombinant albumin-free IV Kit (Xyntha)",
+        "ITEM_SDESC": "antihemophilicfactorrecombinantalbuminfreeKit",
+        "ITEM_OMNI_ID": "4260",
+        "UPDT_DT_TM": "12/05/2018 20:46",
+        "UPDT_PRSNL": "Wunderlich (Cerner), Alan"
+      },
+      {
+        "ITEM_ID": 77379508.0,
+        "ITEM_DESC": "antihemophilic factor-von Willebrand factor Inj",
+        "ITEM_SDESC": "antihemophilicfactorvonWillebrandfactorInj",
+        "ITEM_OMNI_ID": "4256",
+        "UPDT_DT_TM": "12/05/2018 20:46",
+        "UPDT_PRSNL": "Wunderlich (Cerner), Alan"
+      },
+      {
+        "ITEM_ID": 77396392.0,
+        "ITEM_DESC": "BCG 50 mg Intravesical Irrigation",
+        "ITEM_SDESC": "BCG50IRR",
+        "ITEM_OMNI_ID": "3966",
+        "UPDT_DT_TM": "12/05/2018 20:46",
+        "UPDT_PRSNL": "Wunderlich (Cerner), Alan"
+      },
+      {
+        "ITEM_ID": 79509395.0,
+        "ITEM_DESC": "BCG Live 50 mg in 50 mL NS( PF)",
+        "ITEM_SDESC": "BCG",
+        "ITEM_OMNI_ID": "",
+        "UPDT_DT_TM": "12/05/2018 20:48",
+        "UPDT_PRSNL": "Wunderlich (Cerner), Alan"
+      },
+      {
+        "ITEM_ID": 77520068.0,
+        "ITEM_DESC": "diphtheria-tetanus toxoids (DT) pediatric IM Susp 0.5 mL",
+        "ITEM_SDESC": "diphtheriatetanustoxoids(DT)pediatricSusp0.5",
+        "ITEM_OMNI_ID": "356",
+        "UPDT_DT_TM": "12/05/2018 20:46",
+        "UPDT_PRSNL": "Wunderlich (Cerner), Alan"
+      },
+      {
+        "ITEM_ID": 77519852.0,
+        "ITEM_DESC": "diphtheria/hepatitis B/pertussis,acellular/polio/tetanus IM Susp 0.5 mL",
+        "ITEM_SDESC": "diphtheriahepatitisBpertussisacellularpoliotetanusSusp5",
+        "ITEM_OMNI_ID": "3673",
+        "UPDT_DT_TM": "12/05/2018 20:46",
+        "UPDT_PRSNL": "Wunderlich (Cerner), Alan"
+      },
+      {
+        "ITEM_ID": 77519958.0,
+        "ITEM_DESC": "diphtheria/tetanus/pertuss (DTaP) ped 15 units-5 units-23 mcg/0.5 mL IM Susp 0.5 mL",
+        "ITEM_SDESC": "Daptacel(DTaP)05mL",
+        "ITEM_OMNI_ID": "2791",
+        "UPDT_DT_TM": "12/05/2018 20:46",
+        "UPDT_PRSNL": "Wunderlich (Cerner), Alan"
+      },
+      {
+        "ITEM_ID": 77520013.0,
+        "ITEM_DESC": "diphtheria/tetanus/pertussis (DTaP) ped 25 units-10 units-58 mcg/0.5 mL IM Susp 0.5 mL",
+        "ITEM_SDESC": "Infanrix(DTaP) PF05mL",
+        "ITEM_OMNI_ID": "5185",
+        "UPDT_DT_TM": "12/05/2018 20:46",
+        "UPDT_PRSNL": "Wunderlich (Cerner), Alan"
+      },
+      {
+        "ITEM_ID": 77600979.0,
+        "ITEM_DESC": "haemophilus b conjugate (PRP-OMP) vaccine 7.5 mcg-125 mcg/0.5 mL IM Susp 0.5 mL",
+        "ITEM_SDESC": "haemophilusbconjugatevaccine75125Susp5",
+        "ITEM_OMNI_ID": "5467",
+        "UPDT_DT_TM": "12/05/2018 20:46",
+        "UPDT_PRSNL": "Wunderlich (Cerner), Alan"
+      },
+      {
+        "ITEM_ID": 77601034.0,
+        "ITEM_DESC": "haemophilus b conjugate (PRP-T) vaccine IM Inj",
+        "ITEM_SDESC": "haemophilusbconjugatevaccineInj",
+        "ITEM_OMNI_ID": "3448",
+        "UPDT_DT_TM": "12/05/2018 20:46",
+        "UPDT_PRSNL": "Wunderlich (Cerner), Alan"
+      },
+      {
+        "ITEM_ID": 77605446.0,
+        "ITEM_DESC": "hepatitis A adult vaccine 1440 units/mL PF IM Susp 1 mL",
+        "ITEM_SDESC": "hepatitisAadultvaccine1440PFSusp1",
+        "ITEM_OMNI_ID": "2786",
+        "UPDT_DT_TM": "12/05/2018 20:46",
+        "UPDT_PRSNL": "Wunderlich (Cerner), Alan"
+      },
+      {
+        "ITEM_ID": 77605660.0,
+        "ITEM_DESC": "hepatitis A pediatric vaccine 720 units/0.5 mL PF IM Susp 0.5 mL",
+        "ITEM_SDESC": "hepatitisApediatricvaccine7205PFSusp5",
+        "ITEM_OMNI_ID": "2790",
+        "UPDT_DT_TM": "12/05/2018 20:46",
+        "UPDT_PRSNL": "Wunderlich (Cerner), Alan"
+      },
+      {
+        "ITEM_ID": 77605817.0,
+        "ITEM_DESC": "hepatitis B adult vaccine 10 mcg/mL IM Susp 1 mL",
+        "ITEM_SDESC": "hepatitisBadultvaccine10Susp1",
+        "ITEM_OMNI_ID": "296",
+        "UPDT_DT_TM": "12/05/2018 20:46",
+        "UPDT_PRSNL": "Wunderlich (Cerner), Alan"
+      },
+      {
+        "ITEM_ID": 77605915.0,
+        "ITEM_DESC": "hepatitis B adult vaccine 20 mcg/mL IM Susp 1 mL",
+        "ITEM_SDESC": "hepatitisBadultvaccine20Susp1",
+        "ITEM_OMNI_ID": "4282",
+        "UPDT_DT_TM": "12/05/2018 20:46",
+        "UPDT_PRSNL": "Wunderlich (Cerner), Alan"
+      },
+      {
+        "ITEM_ID": 77606060.0,
+        "ITEM_DESC": "hepatitis B adult vaccine dialysis 40 mcg/mL IM Susp 1 mL",
+        "ITEM_SDESC": "hepatitisBadultvaccinedialysis40Susp1",
+        "ITEM_OMNI_ID": "299",
+        "UPDT_DT_TM": "12/05/2018 20:46",
+        "UPDT_PRSNL": "Wunderlich (Cerner), Alan"
+      },
+      {
+        "ITEM_ID": 77606107.0,
+        "ITEM_DESC": "hepatitis B immune globulin IM Soln 0.5 mL",
+        "ITEM_SDESC": "hepatitisBimmuneglobulinSoln5IM",
+        "ITEM_OMNI_ID": "625",
+        "UPDT_DT_TM": "12/05/2018 20:46",
+        "UPDT_PRSNL": "Wunderlich (Cerner), Alan"
+      },
+      {
+        "ITEM_ID": 77606211.0,
+        "ITEM_DESC": "hepatitis B immune globulin IM Soln 5 mL",
+        "ITEM_SDESC": "hepatitisBimmuneglobulinSoln5",
+        "ITEM_OMNI_ID": "4531",
+        "UPDT_DT_TM": "12/05/2018 20:46",
+        "UPDT_PRSNL": "Wunderlich (Cerner), Alan"
+      },
+      {
+        "ITEM_ID": 77606368.0,
+        "ITEM_DESC": "hepatitis B pediatric vaccine 10 mcg/0.5 mL IM Susp 0.5 mL",
+        "ITEM_SDESC": "hepatitisBpediatricvaccine105Susp5mL",
+        "ITEM_OMNI_ID": "5610",
+        "UPDT_DT_TM": "12/05/2018 20:46",
+        "UPDT_PRSNL": "Wunderlich (Cerner), Alan"
+      },
+      {
+        "ITEM_ID": 77606466.0,
+        "ITEM_DESC": "hepatitis B pediatric vaccine 5 mcg/0.5 mL IM Susp 0.5 mL",
+        "ITEM_SDESC": "hepatitisBpediatricvaccine55Susp5",
+        "ITEM_OMNI_ID": "302",
+        "UPDT_DT_TM": "12/05/2018 20:46",
+        "UPDT_PRSNL": "Wunderlich (Cerner), Alan"
+      },
+      {
+        "ITEM_ID": 79311439.0,
+        "ITEM_DESC": "human papillomavirus vaccine 9-valent Sus",
+        "ITEM_SDESC": "humaSus",
+        "ITEM_OMNI_ID": "5449",
+        "UPDT_DT_TM": "12/05/2018 20:48",
+        "UPDT_PRSNL": "Wunderlich (Cerner), Alan"
+      },
+      {
+        "ITEM_ID": 77607533.0,
+        "ITEM_DESC": "human papillomavirus vaccine type 6,11,16,18 IM Susp 0.5 mL",
+        "ITEM_SDESC": "humanpapillomavirusvaccinetype6111618Susp5",
+        "ITEM_OMNI_ID": "4048",
+        "UPDT_DT_TM": "12/05/2018 20:46",
+        "UPDT_PRSNL": "Wunderlich (Cerner), Alan"
+      },
+      {
+        "ITEM_ID": 77680161.0,
+        "ITEM_DESC": "measles/mumps/rubella virus vaccine Subcut Inj",
+        "ITEM_SDESC": "measlesmumpsrubellavirusvaccineInj",
+        "ITEM_OMNI_ID": "295",
+        "UPDT_DT_TM": "12/05/2018 20:46",
+        "UPDT_PRSNL": "Wunderlich (Cerner), Alan"
+      },
+      {
+        "ITEM_ID": 77682765.0,
+        "ITEM_DESC": "meningococcal conjugate vaccine group ACYW (2m-55y) IM Inj",
+        "ITEM_SDESC": "meningococcalconjugatevaccinegroupACYW2M55Y",
+        "ITEM_OMNI_ID": "4705",
+        "UPDT_DT_TM": "12/05/2018 20:46",
+        "UPDT_PRSNL": "Wunderlich (Cerner), Alan"
+      },
+      {
+        "ITEM_ID": 79310416.0,
+        "ITEM_DESC": "meningococcal group B vaccine recombinant, OMV, adjuvanted Sus",
+        "ITEM_SDESC": "meniadjuvantedSus",
+        "ITEM_OMNI_ID": "5487",
+        "UPDT_DT_TM": "12/05/2018 20:48",
+        "UPDT_PRSNL": "Wunderlich (Cerner), Alan"
+      },
+      {
+        "ITEM_ID": 77764428.0,
+        "ITEM_DESC": "pneumococcal 13-valent conjugate vaccine IM Susp 0.5 mL",
+        "ITEM_SDESC": "pneumococcal13valentconjugatevaccineSusp5",
+        "ITEM_OMNI_ID": "4416",
+        "UPDT_DT_TM": "12/05/2018 20:46",
+        "UPDT_PRSNL": "Wunderlich (Cerner), Alan"
+      },
+      {
+        "ITEM_ID": 77764479.0,
+        "ITEM_DESC": "pneumococcal 23-polyvalent vaccine Inj Soln 0.5 mL vial",
+        "ITEM_SDESC": "pneumococcal23polyvalentvaccineSoln5vial",
+        "ITEM_OMNI_ID": "185",
+        "UPDT_DT_TM": "12/05/2018 20:46",
+        "UPDT_PRSNL": "Wunderlich (Cerner), Alan"
+      },
+      {
+        "ITEM_ID": 77765005.0,
+        "ITEM_DESC": "poliovirus vaccine, inactivated Inj Susp 5 mL",
+        "ITEM_SDESC": "poliovirusvaccineinactivatedInjSusp5mL",
+        "ITEM_OMNI_ID": "2530",
+        "UPDT_DT_TM": "12/05/2018 20:46",
+        "UPDT_PRSNL": "Wunderlich (Cerner), Alan"
+      },
+      {
+        "ITEM_ID": 77790286.0,
+        "ITEM_DESC": "rabies immune globulin, human 150 intl units/mL IM Soln 10 mL",
+        "ITEM_SDESC": "rabiesimmuneglobulinhuman150Soln10",
+        "ITEM_OMNI_ID": "623",
+        "UPDT_DT_TM": "12/05/2018 20:47",
+        "UPDT_PRSNL": "Wunderlich (Cerner), Alan"
+      },
+      {
+        "ITEM_ID": 77790339.0,
+        "ITEM_DESC": "rabies immune globulin, human 150 intl units/mL IM Soln 2 mL",
+        "ITEM_SDESC": "rabiesimmuneglobulinhuman150Soln2",
+        "ITEM_OMNI_ID": "622",
+        "UPDT_DT_TM": "12/05/2018 20:47",
+        "UPDT_PRSNL": "Wunderlich (Cerner), Alan"
+      },
+      {
+        "ITEM_ID": 77790439.0,
+        "ITEM_DESC": "rabies vaccine, purified chick embryo cell 2.5 intl units IM Inj",
+        "ITEM_SDESC": "rabiesvaccinepurifiedchickembryocell25Inj",
+        "ITEM_OMNI_ID": "4230",
+        "UPDT_DT_TM": "12/05/2018 20:47",
+        "UPDT_PRSNL": "Wunderlich (Cerner), Alan"
+      },
+      {
+        "ITEM_ID": 77802921.0,
+        "ITEM_DESC": "rotavirus vaccine pentavalent Oral Susp 2 mL",
+        "ITEM_SDESC": "rotavirusvaccinepentavalentSusp2",
+        "ITEM_OMNI_ID": "4153",
+        "UPDT_DT_TM": "12/05/2018 20:47",
+        "UPDT_PRSNL": "Wunderlich (Cerner), Alan"
+      },
+      {
+        "ITEM_ID": 77840985.0,
+        "ITEM_DESC": "tetanus immune globulin 250 units IM Soln",
+        "ITEM_SDESC": "tetanusimmuneglobulin250Soln",
+        "ITEM_OMNI_ID": "624",
+        "UPDT_DT_TM": "12/05/2018 20:47",
+        "UPDT_PRSNL": "Wunderlich (Cerner), Alan"
+      },
+      {
+        "ITEM_ID": 77841260.0,
+        "ITEM_DESC": "tetanus-diphtheria toxoids (Td) adult/adolescent 5 units-2 units/0.5 mL IM Susp 0.5 mL",
+        "ITEM_SDESC": "tetanusdiphtheriatoxoids(Td)adultadolescent525Susp5",
+        "ITEM_OMNI_ID": "5110",
+        "UPDT_DT_TM": "12/05/2018 20:47",
+        "UPDT_PRSNL": "Wunderlich (Cerner), Alan"
+      },
+      {
+        "ITEM_ID": 77841150.0,
+        "ITEM_DESC": "tetanus/diphth/pertussis (Adacel Tdap) IM Susp 0.5 mL",
+        "ITEM_SDESC": "Adacel",
+        "ITEM_OMNI_ID": "3999",
+        "UPDT_DT_TM": "12/05/2018 20:48",
+        "UPDT_PRSNL": "Wunderlich (Cerner), Alan"
+      },
+      {
+        "ITEM_ID": 77841095.0,
+        "ITEM_DESC": "tetanus/diphth/pertussis (Boostrix Tdap) IM Susp 0.5 mL",
+        "ITEM_SDESC": "Boostrix",
+        "ITEM_OMNI_ID": "4154",
+        "UPDT_DT_TM": "12/05/2018 20:47",
+        "UPDT_PRSNL": "Wunderlich (Cerner), Alan"
+      },
+      {
+        "ITEM_ID": 77862574.0,
+        "ITEM_DESC": "typhoid vaccine, inactivated IM Soln 0.5 mL",
+        "ITEM_SDESC": "typhoidvaccineinactivatedSoln5",
+        "ITEM_OMNI_ID": "360",
+        "UPDT_DT_TM": "12/05/2018 20:48",
+        "UPDT_PRSNL": "Wunderlich (Cerner), Alan"
+      },
+      {
+        "ITEM_ID": 77871407.0,
+        "ITEM_DESC": "varicella virus vaccine Subcut Inj",
+        "ITEM_SDESC": "varicellavirusvaccineInj",
+        "ITEM_OMNI_ID": "301",
+        "UPDT_DT_TM": "12/05/2018 20:48",
+        "UPDT_PRSNL": "Wunderlich (Cerner), Alan"
+      },
+      {
+        "ITEM_ID": 77379457.0,
+        "ITEM_DESC": "zzantihemophilic factor VIII recombinant IV Inj (Kogenate FS)",
+        "ITEM_SDESC": "zzantihemophilicfactorrecombinantInj",
+        "ITEM_OMNI_ID": "zz4280",
+        "UPDT_DT_TM": "12/05/2018 20:46",
+        "UPDT_PRSNL": "Wunderlich (Cerner), Alan"
+      },
+      {
+        "ITEM_ID": 81623995.0,
+        "ITEM_DESC": "zzinfluenza vaccine for 2+ years (Flucelvax), inactivated, quadrivalent (ccIIV4) (PF) 0.5 mL Susp",
+        "ITEM_SDESC": "zzinfFLUCELVAXSYR0.5ML",
+        "ITEM_OMNI_ID": "5639",
+        "UPDT_DT_TM": "12/05/2018 20:48",
+        "UPDT_PRSNL": "Wunderlich (Cerner), Alan"
+      },
+      {
+        "ITEM_ID": 81536939.0,
+        "ITEM_DESC": "zzinfluenza vaccine for 4+ years (Flucelvax), inactivated, quadrivalent (ccIIV4) (PF) 5 mL Susp",
+        "ITEM_SDESC": "zzinfFLUCELVAX5mL",
+        "ITEM_OMNI_ID": "",
+        "UPDT_DT_TM": "12/05/2018 20:48",
+        "UPDT_PRSNL": "Wunderlich (Cerner), Alan"
+      },
+      {
+        "ITEM_ID": 79800695.0,
+        "ITEM_DESC": "zzinfluenza vaccine for 6+ months (FluLaval), inactivated, quadrivalent (IIV4) (PF) 0.5 mL Susp",
+        "ITEM_SDESC": "zzinfFLULAVAL0.5mL",
+        "ITEM_OMNI_ID": "5584",
+        "UPDT_DT_TM": "12/05/2018 20:48",
+        "UPDT_PRSNL": "Wunderlich (Cerner), Alan"
+      },
+      {
+        "ITEM_ID": 81313694.0,
+        "ITEM_DESC": "zzrabies immune globulin, human 300 intl units/mL IM Soln 5 mL",
+        "ITEM_SDESC": "zzrabiesimmune150units1mlsoln5ml",
+        "ITEM_OMNI_ID": "5631",
+        "UPDT_DT_TM": "12/05/2018 20:47",
+        "UPDT_PRSNL": "Wunderlich (Cerner), Alan"
+      },
+      {
+        "ITEM_ID": 77790392.0,
+        "ITEM_DESC": "zzrabies vaccine, human diploid cell 2.5 intl units IM Inj",
+        "ITEM_SDESC": "zzrabiesvaccinehumandiploidcell25Inj",
+        "ITEM_OMNI_ID": "2525",
+        "UPDT_DT_TM": "12/05/2018 20:47",
+        "UPDT_PRSNL": "Wunderlich (Cerner), Alan"
+      }
+    ]
+  }
+}

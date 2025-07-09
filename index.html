@@ -16,48 +16,35 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/js/bootstrap-datepicker.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	<script type="text/javascript" src="https://unpkg.com/tabulator-tables@6.3.1/dist/js/tabulator.min.js"></script>
+	<script src="https://unpkg.com/tabulator-tables@6.3.1/dist/js/tabulator.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/luxon/3.5.0/luxon.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.4.0/exceljs.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="https://kit.fontawesome.com/d98fc94c11.js" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.fancytree/2.38.5/jquery.fancytree-all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="https://cdn.jsdelivr.net/npm/jquery.fancytree@2.23.0/src/jquery.fancytree.filter.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdn.jsdelivr.net/npm/jquery.fancytree@2.23.0/src/jquery.fancytree.glyph.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.fancytree@2.23.0/src/jquery.fancytree.glyph.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="assets/pharm_fs_main_report_driver.js"></script>
 </head>
 
 <body onload="initialLoad()">
     <div class="dashboard-container">
         <header class="header-bar text-center">
-            <div style="
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-          ">
+            <div class="header-bar-div">
                 <div>
-                    <div style="font-size: 30px; font-weight: bold">
+                    <div class="header-bar-title">
                         Pharmacy Floorstock Tracker
                     </div>
                 </div>
                 <div>
-                    <i id="loadFormularyManagerBtn" class="fa-solid fa-database fa-xl" title="Formulary Tool"
-                        style="color: white; cursor: pointer" aria-hidden="true"></i><span class="sr-only">Formulary
-                        Tool</span>
+                    <i id="loadFormularyManagerBtn" class="fa-solid fa-database fa-xl formulary-tool-btn" title="Formulary Tool" aria-hidden="true"></i><span class="sr-only">Formulary Tool</span>
                 </div>
             </div>
         </header>
-        <div style="
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-        ">
-            <div style="margin-left: 1em">
-                <i id="inventoryFilterOptionsBtn" class="fa-solid fa-bars fa-2xl" title="Filter Options"
-                    style="cursor: pointer" aria-hidden="true"></i><span class="sr-only">Filter Options</span><i
-                    id="changesFilterOptionsBtn" class="fa-solid fa-bars fa-2xl" title="Filter Options"
-                    style="cursor: pointer; display: none" aria-hidden="true"></i><span class="sr-only">Filter
-                    Options</span>
+        <div class="header-bar-div">
+            <div>
+                <i id="inventoryFilterOptionsBtn" class="fa-solid fa-bars fa-2xl filter-options-btn" title="Filter Options" aria-hidden="true"></i>
+                <i id="changesFilterOptionsBtn" class="fa-solid fa-bars fa-2xl filter-options-btn" title="Filter Options" aria-hidden="true"></i>
             </div>
             <div>
                 <ul class="nav nav-pills justify-content-center py-2">
@@ -70,105 +57,94 @@
                 </ul>
             </div>
             <div>
-                <i id="downloadCurrentTableBtn" class="fa-solid fa-download fa-2xl" title="Download"
-                    style="cursor: pointer; display: none" aria-hidden="true"></i><span class="sr-only">Download</span>
+                <i id="downloadCurrentTableBtn" class="fa-solid fa-download fa-2xl filter-options-btn" title="Download" aria-hidden="true"></i><span class="sr-only">Download</span>
             </div>
         </div>
         <hr />
         <div class="dashboard-main">
-            <div style="flex: 1">
-                <div id="reportsDiv" style="display: block; height: -webkit-fill-available">
-                    <div class="d-flex" style="height: 100%; width: 100%">
-                        <div id="locationFilterDiv" class="card p-3 shadow-sm"
-                            style="width: 30vw; min-width: 30vw; margin-right: 1em">
+            <div class="dashboard-main-content">
+                <div id="reportsDiv">
+                    <div class="d-flex location-filter-div-container">
+                        <div id="locationFilterDiv" class="card p-3 shadow-sm location-filter-div">
                             <h5 class="card-title mb-3">Location Filters</h5>
                             <div class="mb-3">
                                 <div class="input-group dflex" role="group">
-                                    <label class="form-label" style="width: 3em">Type:</label><input type="radio"
-                                        class="btn-check" name="btnradio" id="btnradio5"
-                                        loctype="fa-solid fa-cabinet-filing" /><label class="btn btn-outline-primary"
-                                        for="btnradio5" title="Cabinet / Carousel"><i class="fa-solid fa-cabinet-filing"
-                                            aria-hidden="true"></i></label><input type="radio" class="btn-check"
-                                        name="btnradio" id="btnradio1" loctype="fa-solid fa-mortar-pestle" /><label
-                                        class="btn btn-outline-primary" for="btnradio1" title="Pharmacy"><i
-                                            class="fa-solid fa-mortar-pestle" aria-hidden="true"></i></label><input
-                                        type="radio" class="btn-check" name="btnradio" id="btnradio2"
-                                        loctype="fa-solid fa-user-nurse-hair-long" /><label
-                                        class="btn btn-outline-primary" for="btnradio2" title="Nurse Unit"><i
-                                            class="fa-solid fa-user-nurse-hair-long"
-                                            aria-hidden="true"></i></label><input type="radio" class="btn-check"
-                                        name="btnradio" id="btnradio3" loctype="fa-solid fa-house-medical-flag" /><label
-                                        class="btn btn-outline-primary" for="btnradio3" title="Ambulatory"><i
-                                            class="fa-solid fa-house-medical-flag" aria-hidden="true"></i></label><input
-                                        type="radio" class="btn-check" name="btnradio" id="btnradio4"
-                                        loctype="fa-solid fa-syringe" /><label class="btn btn-outline-primary"
-                                        for="btnradio4" title="Inventory"><i class="fa-solid fa-syringe"
-                                            aria-hidden="true"></i></label><input type="button" class="btn"
-                                        id="btnResetLocTypeSearch" style="border: none" disabled="" /><label
-                                        id="btnResetLocTypeSearchLabel" class="btn btn-outline-primary"
-                                        for="btnResetLocTypeSearch" title="Clear Filter" disabled="disabled"><i
-                                            class="fa-solid fa-circle-xmark" aria-hidden="true"></i></label>
+                                    <label class="form-label filter-input-title">Type:</label>
+
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio5" loctype="fa-solid fa-cabinet-filing" title="Cabinet / Carousel" />
+                                    <label class="btn btn-outline-primary" for="btnradio5" title="Cabinet / Carousel">
+                                        <i class="fa-solid fa-cabinet-filing" aria-hidden="true"></i>
+                                    </label>
+
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" loctype="fa-solid fa-mortar-pestle" title="Pharmacy" />
+                                    <label class="btn btn-outline-primary" for="btnradio1" title="Pharmacy">
+                                        <i class="fa-solid fa-mortar-pestle" aria-hidden="true"></i>
+                                    </label>
+                                    
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" loctype="fa-solid fa-user-nurse-hair-long" title="Nurse Unit" />
+                                    <label class="btn btn-outline-primary" for="btnradio2" title="Nurse Unit">
+                                        <i class="fa-solid fa-user-nurse-hair-long" aria-hidden="true"></i>
+                                    </label>
+                                    
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" loctype="fa-solid fa-house-medical-flag" title="Ambulatory" />
+                                    <label class="btn btn-outline-primary" for="btnradio3" title="Ambulatory">
+                                        <i class="fa-solid fa-house-medical-flag" aria-hidden="true"></i>
+                                    </label>
+                                
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio4" loctype="fa-solid fa-syringe" title="Inventory" />
+                                    <label class="btn btn-outline-primary" for="btnradio4" title="Inventory">
+                                        <i class="fa-solid fa-syringe" aria-hidden="true"></i>
+                                    </label>
+
+                                    <input type="button" class="btn btn-borderNone" id="btnResetLocTypeSearch" disabled="" title="Clear Filter" />
+                                    <label id="btnResetLocTypeSearchLabel" class="btn btn-outline-primary" for="btnResetLocTypeSearch" title="Clear Filter" disabled>
+                                        <i class="fa-solid fa-circle-xmark" aria-hidden="true"></i>
+                                    </label>
                                 </div>
-                                <div style="padding: 10px"></div>
+                                <div class="location-filter-div-padding"></div>
                                 <div id="locationCabinetTree">
-                                    <ul style="display: none" class="ui-fancytree-source ui-helper-hidden">
+                                    <ul id="locationCabinetTreeList" class="ui-fancytree-source ui-helper-hidden">
                                         <li data-icon="fa-solid fa-hospitals">
-                                            Advanced Cardiology Practice Berkshire
+                                            Clinic #2
                                             <ul>
                                                 <li id="2609228293.000000" data-icon="fa-solid fa-syringe">
-                                                    Advanced Cardiology Berkshire (Private)
+                                                    Clinic #1 (Private)
                                                 </li>
                                             </ul>
                                         </li>
                                         <li data-icon="fa-solid fa-hospitals">
-                                            Advanced Cardiology Practice Clifton 246
+                                            Clinic #2
                                             <ul>
                                                 <li id="2609230529.000000" data-icon="fa-solid fa-syringe">
-                                                    Advanced Cardiology Clifton 246 Private
+                                                    Clinic #2 Private
                                                 </li>
                                             </ul>
                                         </li>
                                         <li data-icon="fa-solid fa-hospitals">
-                                            Pediatric Hematology Oncology Getty
-                                            <ul>
-                                                <li id="2555693677.000000" data-icon="fa-solid fa-syringe">
-                                                    Peds Hematology Oncology Getty(Priv)
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li data-icon="fa-solid fa-hospitals">
-                                            Pediatric Hematology Oncology Paterson
-                                            <ul>
-                                                <li id="2555693653.000000" data-icon="fa-solid fa-syringe">
-                                                    Peds Hematology Oncology Pat (Private)
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li data-icon="fa-solid fa-hospitals">
-                                            St. Joseph's University Medical Center
+                                            Inpatient Hospital #1
                                             <ul>
                                                 <li id="2554275287.000000" data-icon="fa-solid fa-user-nurse-hair-long">
-                                                    CCB 3N
+                                                    Nurse Unit #1
                                                 </li>
                                                 <li id="2554275551.000000" data-icon="fa-solid fa-user-nurse-hair-long">
-                                                    CCB 3S
+                                                    Nurse Unit #2
                                                 </li>
                                                 <li id="6065135823.000000" data-icon="fa-solid fa-cabinet-filing">
-                                                    PBC SJX3IV
+                                                    Omnicell Carousel
                                                 </li>
                                                 <li id="2554376983.000000" data-icon="fa-solid fa-mortar-pestle">
-                                                    Pharmacy Main SJRH
+                                                    Main Pharmacy
                                                 </li>
                                                 <li id="2555556309.000000" data-icon="fa-solid fa-cabinet-filing">
-                                                    UBC SJASENDO02
+                                                    Omnicell Cabinet
                                                 </li>
                                             </ul>
                                         </li>
                                         <li data-icon="fa-solid fa-hospitals">
-                                            University Imaging St. Joseph's Wayne Hospital
+                                            Inpatient Hospital #2
                                             <ul>
                                                 <li id="2554440165.000000" data-icon="fa-solid fa-house-medical-flag">
-                                                    Univ Imaging
+                                                    Ambulatory #1
                                                 </li>
                                             </ul>
                                         </li>
