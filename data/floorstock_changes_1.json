@@ -1,0 +1,152 @@
+{
+  "MREC": {
+    "CNT": 11,
+    "START_DT_TM": "07032025",
+    "STOP_DT_TM": "08082025",
+    "QUAL": [
+      {
+        "CHANGE_I4": 2,
+        "CHANGE_VC": "Delete",
+        "CHANGE_DT_TM": "07/08/2025 16:55",
+        "CHANGE_PRSNL_F8": 3861940.0,
+        "CHANGE_PRSNL_VC": "CERNER, IBUS Cerner",
+        "LOCATION_CD": 2555557049.0,
+        "LOCATION_VC": "UBC SJSE5",
+        "ITEM_ID": 79292292.0,
+        "ITEM_DESC": "methimazole 2.5 mg = 0.5 Tab, split",
+        "ITEM_SDESC": "METH25T",
+        "ITEM_OMNI_ID": "5229"
+      },
+      {
+        "CHANGE_I4": 2,
+        "CHANGE_VC": "Delete",
+        "CHANGE_DT_TM": "07/08/2025 16:54",
+        "CHANGE_PRSNL_F8": 3861940.0,
+        "CHANGE_PRSNL_VC": "CERNER, IBUS Cerner",
+        "LOCATION_CD": 2555556745.0,
+        "LOCATION_VC": "UBC SJLDR_MAIN",
+        "ITEM_ID": 79290136.0,
+        "ITEM_DESC": "levothyroxine 12.5 mcg (0.0125 mg) = 0.5 Tab, split",
+        "ITEM_SDESC": "LEVO125T",
+        "ITEM_OMNI_ID": "4728"
+      },
+      {
+        "CHANGE_I4": 2,
+        "CHANGE_VC": "Delete",
+        "CHANGE_DT_TM": "07/08/2025 16:52",
+        "CHANGE_PRSNL_F8": 3861940.0,
+        "CHANGE_PRSNL_VC": "CERNER, IBUS Cerner",
+        "LOCATION_CD": 2555556697.0,
+        "LOCATION_VC": "UBC SJINFCTR",
+        "ITEM_ID": 77561978.0,
+        "ITEM_DESC": "famotidine 20 mg/50 mL IV Soln 50 mL",
+        "ITEM_SDESC": "famo20Soln50",
+        "ITEM_OMNI_ID": "273"
+      },
+      {
+        "CHANGE_I4": 2,
+        "CHANGE_VC": "Delete",
+        "CHANGE_DT_TM": "07/08/2025 16:18",
+        "CHANGE_PRSNL_F8": 3861940.0,
+        "CHANGE_PRSNL_VC": "CERNER, IBUS Cerner",
+        "LOCATION_CD": 2555556745.0,
+        "LOCATION_VC": "UBC SJLDR_MAIN",
+        "ITEM_ID": 77422338.0,
+        "ITEM_DESC": "bupivacaine 0.25% Inj Soln 50 mL",
+        "ITEM_SDESC": "bupiva25Soln50",
+        "ITEM_OMNI_ID": "1793"
+      },
+      {
+        "CHANGE_I4": 2,
+        "CHANGE_VC": "Delete",
+        "CHANGE_DT_TM": "07/08/2025 15:11",
+        "CHANGE_PRSNL_F8": 3861940.0,
+        "CHANGE_PRSNL_VC": "CERNER, IBUS Cerner",
+        "LOCATION_CD": 2555556689.0,
+        "LOCATION_VC": "UBC SJEDTRAUMA",
+        "ITEM_ID": 79965882.0,
+        "ITEM_DESC": "bupivacaine liposome 1.3% (13.3 mg/mL) Inj Susp 10 mL",
+        "ITEM_SDESC": "bupi1.3Susp10ml",
+        "ITEM_OMNI_ID": "5618"
+      },
+      {
+        "CHANGE_I4": 1,
+        "CHANGE_VC": "Add",
+        "CHANGE_DT_TM": "07/08/2025 08:54",
+        "CHANGE_PRSNL_F8": 3861940.0,
+        "CHANGE_PRSNL_VC": "CERNER, IBUS Cerner",
+        "LOCATION_CD": 2555556689.0,
+        "LOCATION_VC": "UBC SJEDTRAUMA",
+        "ITEM_ID": 79965882.0,
+        "ITEM_DESC": "bupivacaine liposome 1.3% (13.3 mg/mL) Inj Susp 10 mL",
+        "ITEM_SDESC": "bupi1.3Susp10ml",
+        "ITEM_OMNI_ID": "5618"
+      },
+      {
+        "CHANGE_I4": 1,
+        "CHANGE_VC": "Add",
+        "CHANGE_DT_TM": "07/07/2025 18:14",
+        "CHANGE_PRSNL_F8": 3861940.0,
+        "CHANGE_PRSNL_VC": "CERNER, IBUS Cerner",
+        "LOCATION_CD": 2555557073.0,
+        "LOCATION_VC": "UBC SJSE6S",
+        "ITEM_ID": 77358503.0,
+        "ITEM_DESC": "albumin human 5% IV Soln 250 mL",
+        "ITEM_SDESC": "albumhum5Soln250",
+        "ITEM_OMNI_ID": "3569"
+      },
+      {
+        "CHANGE_I4": 2,
+        "CHANGE_VC": "Delete",
+        "CHANGE_DT_TM": "07/07/2025 18:14",
+        "CHANGE_PRSNL_F8": 3861940.0,
+        "CHANGE_PRSNL_VC": "CERNER, IBUS Cerner",
+        "LOCATION_CD": 2555557073.0,
+        "LOCATION_VC": "UBC SJSE6S",
+        "ITEM_ID": 77766063.0,
+        "ITEM_DESC": "polyethylene glycol 3350 with electrolytes Oral Powder-Recon 4000 mL",
+        "ITEM_SDESC": "polyethyleneglycol3350welectrolytesPwdrRecon4000",
+        "ITEM_OMNI_ID": "2697"
+      },
+      {
+        "CHANGE_I4": 2,
+        "CHANGE_VC": "Delete",
+        "CHANGE_DT_TM": "07/06/2025 10:55",
+        "CHANGE_PRSNL_F8": 3861940.0,
+        "CHANGE_PRSNL_VC": "CERNER, IBUS Cerner",
+        "LOCATION_CD": 2555557033.0,
+        "LOCATION_VC": "UBC SJSE3_A",
+        "ITEM_ID": 80190470.0,
+        "ITEM_DESC": "codeine-promethazine 10 mg-6.25 mg/5 mL Oral Syringe",
+        "ITEM_SDESC": "codeineprome106255Syrp5",
+        "ITEM_OMNI_ID": "1551"
+      },
+      {
+        "CHANGE_I4": 2,
+        "CHANGE_VC": "Delete",
+        "CHANGE_DT_TM": "07/03/2025 21:48",
+        "CHANGE_PRSNL_F8": 12514936.0,
+        "CHANGE_PRSNL_VC": "Heidbreder, Charles",
+        "LOCATION_CD": 3047053323.0,
+        "LOCATION_VC": "XGIR",
+        "ITEM_ID": 77339981.0,
+        "ITEM_DESC": "sodium chloride 0.9% IV Soln 1000 mL",
+        "ITEM_SDESC": "NaCl91000mL",
+        "ITEM_OMNI_ID": "1968"
+      },
+      {
+        "CHANGE_I4": 1,
+        "CHANGE_VC": "Add",
+        "CHANGE_DT_TM": "07/03/2025 21:47",
+        "CHANGE_PRSNL_F8": 12514936.0,
+        "CHANGE_PRSNL_VC": "Heidbreder, Charles",
+        "LOCATION_CD": 3047053323.0,
+        "LOCATION_VC": "XGIR",
+        "ITEM_ID": 77339981.0,
+        "ITEM_DESC": "sodium chloride 0.9% IV Soln 1000 mL",
+        "ITEM_SDESC": "NaCl91000mL",
+        "ITEM_OMNI_ID": "1968"
+      }
+    ]
+  }
+}

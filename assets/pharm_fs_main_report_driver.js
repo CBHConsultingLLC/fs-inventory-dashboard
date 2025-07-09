@@ -1,3 +1,8 @@
+window.onload = function() {
+  if (performance.navigation.type === 1 || performance.getEntriesByType("navigation")[0]?.type === "reload") {
+    window.location.href = window.location.href.split("?")[0] + "?cachebust=" + new Date().getTime();
+  }
+};
 function initialLoad(){
   $('#reportsBtn').on('click',function(){
     showSection('reportsDiv');
@@ -267,27 +272,26 @@ function refreshChanges(){
   const stopDateFDisp = formatDateFields(stopDateObj,1);
   const startDateDisp = formatDateFields(startDateObj,2);
   const stopDateDisp = formatDateFields(stopDateObj,2);
+  const fetchURL = "https://ehrtechsolutions.com/fs-inventory-dashboard/data/floorstock_changes_1.json";
 
-  const reportName = "1_STJO_PHA_FS_ANALYSIS_RPT";
-  const reportParam = '^MINE^,' + 1 + ',0.0,^' + startDateStr + '^,^' + stopDateStr + '^';
+  fetch(fetchURL)
+  .then(response => {
+    console.log("Fetch response:", response);
+    return response.json();
+  })
+  .then(data => {
+    console.log("Parsed data:", data);
 
-  console.log(reportName + "|" + reportParam);
-
-  var initsync = new XMLCclRequest();
-  initsync.onreadystatechange = function() {
-    if(initsync.readyState == 4 && initsync.status == 200){
-      var initjson = JSON.parse(initsync.responseText);
-      $('#changeReportFilterDiv').hide();
-      $('#changeHeaderTitleLocation').html([]).html("<b><u>Date Range</u></b>: " + startDateDisp + " to " + stopDateDisp);
-      $('#changeHeaderTitleLocation').attr('sDate',"").attr('eDate',"");
-      $('#changeHeaderTitleLocation').attr('sDate',startDateFDisp).attr('eDate',stopDateFDisp);
-      $("#dashboardDiv,#downloadCurrentTableBtn,#refreshChangesTblBtn").show();
-
-      initiateDetailTabulator01(initjson.MREC.QUAL);
-    }
-  }
-  initsync.open("GET",reportName,1);
-  initsync.send(reportParam);
+    $('#changeReportFilterDiv').hide();
+    $('#changeHeaderTitleLocation').html([]).html("<b><u>Date Range</u></b>: " + startDateDisp + " to " + stopDateDisp);
+    $('#changeHeaderTitleLocation').attr('sDate',"").attr('eDate',"");
+    $('#changeHeaderTitleLocation').attr('sDate',startDateFDisp).attr('eDate',stopDateFDisp);
+    $("#dashboardDiv,#downloadCurrentTableBtn,#refreshChangesTblBtn").show();
+    initiateDetailTabulator02(data.IREC.QUAL);
+  })
+  .catch(error => {
+    console.error("Fetch error:", error);
+  });
 }
 
 function submitInventoryRequest(){
